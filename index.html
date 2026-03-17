@@ -3,51 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mahavir Creation</title>
+    <title>Homepage - Mahavir Creation</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to Mahavir Creation</h1>
-        <div class="hero-slider">
-            <div class="slide active">
-                <img src="slide1.jpg" alt="Slide 1">
-            </div>
-            <div class="slide">
-                <img src="slide2.jpg" alt="Slide 2">
+    <!-- Hero Slider -->
+    <section id="hero-slider">
+        <div class="slide active">
+            <img src="hero1.jpg" alt="Hero Image 1">
+            <div class="caption">
+                <h1>Welcome to Mahavir Creation</h1>
+                <p>Your one-stop shop for unique creations.</p>
             </div>
         </div>
-    </header>
-    <section class="categories">
-        <h2>Categories</h2>
-        <ul>
-            <li>Category 1</li>
-            <li>Category 2</li>
-            <li>Category 3</li>
-        </ul>
-    </section>
-    <section class="featured-products">
-        <h2>Featured Products</h2>
-        <div class="product">
-            <h3>Product 1</h3>
-            <p>Description of Product 1</p>
-        </div>
-        <div class="product">
-            <h3>Product 2</h3>
-            <p>Description of Product 2</p>
+        <div class="slide">
+            <img src="hero2.jpg" alt="Hero Image 2">
+            <div class="caption">
+                <h1>Explore Our Collections</h1>
+                <p>Discover the beauty of handcrafted items.</p>
+            </div>
         </div>
     </section>
-    <section class="about">
+
+    <!-- Shop by Category -->
+    <section id="shop-by-category">
+        <h2>Shop by Category</h2>
+        <div class="categories">
+            <div class="category">Category 1</div>
+            <div class="category">Category 2</div>
+            <div class="category">Category 3</div>
+        </div>
+    </section>
+
+    <!-- Featured Arrivals -->
+    <section id="featured-arrivals">
+        <h2>Featured Arrivals</h2>
+        <div class="products">
+            <div class="product">Product 1</div>
+            <div class="product">Product 2</div>
+            <div class="product">Product 3</div>
+        </div>
+    </section>
+
+    <!-- About Brand -->
+    <section id="about-brand">
         <h2>About Us</h2>
-        <p>Information about Mahavir Creation.</p>
+        <p>Mahavir Creation is dedicated to providing the best handmade products.</p>
     </section>
-    <section class="contact">
+
+    <!-- Contact Section -->
+    <section id="contact">
         <h2>Contact Us</h2>
-        <p>Contact details and form.</p>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
     </section>
-    <footer>
-        <p>&copy; 2026 Mahavir Creation</p>
-    </footer>
-    <script src="scripts.js"></script>
 </body>
 </html>
