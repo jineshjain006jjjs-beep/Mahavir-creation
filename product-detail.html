@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="product-detail">
+        <h1>Product Title</h1>
+        <div class="image-gallery">
+            <img id="main-image" src="image1.jpg" alt="Main Product Image">
+            <div class="thumbnails">
+                <img src="image1.jpg" alt="Thumbnail 1" onclick="changeImage('image1.jpg')">
+                <img src="image2.jpg" alt="Thumbnail 2" onclick="changeImage('image2.jpg')">
+                <img src="image3.jpg" alt="Thumbnail 3" onclick="changeImage('image3.jpg')">
+            </div>
+        </div>
+        <p class="description">This is the product description. It includes details about the product features and specifications.</p>
+        <div class="size-selector">
+            <label for="size">Choose a size:</label>
+            <select id="size">
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+            </select>
+        </div>
+        <div class="quantity-selector">
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" value="1">
+        </div>
+        <a href="https://wa.me/your-whatsapp-number" class="whatsapp-order-button">Order via WhatsApp</a>
+    </div>
+
+    <script>
+        function changeImage(src) {
+            document.getElementById('main-image').src = src;
+        }
+    </script>
+</body>
+</html>
